@@ -1,0 +1,103 @@
+/*Borrar formato*/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre,
+code,
+address,
+form,
+fieldset,
+blockquote {
+    padding: 0;
+    /*relleno a 0*/
+    margin: 0;
+    /*margen a 0 */
+    font-size: 100%;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*Etiqueta body. Le damos tamaño 100 vh y ademas creamos un grid para toda la pagina
+donde sera de 3 columnas y 4 filas, en 1 fila estara el header, en otra el nav,
+en otra el main y en la ultima el footer.*/
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+/************************ NAV ************************/
+
+
+/*Se le añade al enlace de Home un color verde para saber que nos situamos
+en esa pagina.*/
+
+.about {
+    color: #0E7A0D;
+}
+
+
+/************************* Main *************************/
+
+
+/*Etiqueta main. Se posiciona en el grid. Se añade un color de fondo y se le da margen
+a ambos laterales.*/
+
+main {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    background-color: #EDEDED;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+/*H2 del main. Se alinea en el centro, Se le añade la negrita al h2, se aumenta
+ el tamaño*/
+
+main h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 300%;
+    text-decoration: underline;
+    margin-top: 2%;
+}
+
+
+/*Parrafos del main. Se alinea justificado, se le da margen arriba, izquierda
+ y derecha. Se aumenta el tamaño de las letras y se le da mas espacio entre 
+ parrafos */
+
+main p {
+    text-align: justify;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 150%;
+    line-height: 150%;
+}
+
+
+/*Imagen del main. Se le da margin arriba, abajo e izquierda*/
+
+main img {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 13%;
+}

@@ -1,0 +1,107 @@
+/************************ HEADER ************************/
+
+
+/*div header. Creamos un div para meterlo en el grid del body donde
+estara en la columna 1 y fila 1*/
+
+#header {
+    grid-column: 1/4;
+    grid-row: 1/1;
+}
+
+
+/*Etiqueta header. Creamos un grid de 3 columnas para colocar el logo, el buscador
+ y los botones de iniciar y registrar sesion*/
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/*Enlace h1. Se quita la decoración, se le añade color verde, negrita y se justifica
+al centro*/
+
+.h1 {
+    text-decoration: none;
+    color: #0E7A0D;
+    font-weight: bold;
+    align-self: start;
+    justify-self: center;
+}
+
+
+/*Etiqueta h1. Se mueve con el grid en la columna 0, se le da margen, se aumenta el
+tamaño de la letra, se añade negrita y se alinea en el centro*/
+
+h1 {
+    grid-column: 0/3;
+    margin-top: 10%;
+    font-size: 400%;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*Div buscador. Se posiciona con el grid en la columna del medio (2/3).
+padding a la izquierda para mover el div, margen arriba para separlo del limite,
+posicion relative para anclar la lupa al input.*/
+
+.buscador {
+    grid-column: 2/3;
+    padding-left: 25%;
+    margin-top: 5%;
+    position: relative;
+    color: black;
+}
+
+
+/*Imagen lupa. Se le baja el tamaño un 15%, se le pone posicion absoluta para
+anclarlo al buscador, y se le da margen de arriba y de izquierda*/
+
+.lupa {
+    height: 15%;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+
+/*input buscador. Se le da el tamaño deseado, se quitan los bordes, se aumenta
+ la letra, se le añade padding izquierda para dejarlo donde queremos y cambiamos
+ el color de fondo*/
+
+#buscador {
+    width: 65%;
+    height: 35%;
+    border: 0;
+    font-size: 150%;
+    padding-left: 25%;
+    background-color: #EDEDED;
+}
+
+
+/*Div para colocar las imagenes de inicio y registro de sesión, se posiciona
+en la columna 3 del grid y se le añade margen a la ziquierda*/
+
+.inicio_registro {
+    grid-column: 3/3;
+    margin-left: 19%;
+}
+
+
+/*Imagen de inicio sesión. Se le baja el tamaño */
+
+.inicio_sesion {
+    height: 25%;
+}
+
+
+/*Imagen de registro. Se le baja el tamaño, se le da margen y padding
+para posicionarlo*/
+
+.registro {
+    height: 25%;
+    margin-top: 6%;
+    padding-left: 3%;
+}

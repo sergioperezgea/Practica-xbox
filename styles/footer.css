@@ -1,0 +1,111 @@
+/************************ FOOTER ************************/
+
+
+/*Div de footer. Posicionamos el footer en las columnas
+ del 1 al 4 (todo horizontal y en la fila 4 (La ultima)*/
+
+#footer {
+    grid-column: 1/4;
+    grid-row: 4/4;
+}
+
+
+/*Creamos un grid de solo 3 columnas para posicionar los div del footer
+y le ponemos un fondo*/
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #EDEDED;
+}
+
+
+/*Div suscribirse. Lo posicionamos en la primera parte del grid
+y se le añade margen.
+*/
+
+.suscribirse {
+    grid-column: 1/2;
+    margin: auto;
+    margin-bottom: 15%;
+    margin-top: 15%;
+}
+
+
+/*Input email. Se le añade al input que sea un bloque para poder
+posicionarlo facilmente y se le añade margen.*/
+
+.email {
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 9%;
+}
+
+
+/*Input suscribete. Se le añade margen izquierd, se le reduce el tamaño
+se le quita los bordes, se le cambia el fondo de color y se le cambia
+las letras a color blanco.*/
+
+.suscribete {
+    margin-left: 25%;
+    width: 60%;
+    border: 0;
+    background-color: #767575;
+    color: white;
+}
+
+
+/*Div horario. Se le añade margin auto para centrar y se posiciona
+en la columna del medio del grid*/
+
+.horario {
+    margin: auto;
+    grid-column: 2/3;
+}
+
+
+/*H2 de los footer. Se le aumenta el tamaño, Se le cambia a negrita
+y se añade subrayado al h2*/
+
+footer h2 {
+    font-size: 300%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/*H2 de horario del footer. Se le da margen de abajo.*/
+
+.horario h2 {
+    margin-bottom: 10%;
+}
+
+
+/*Parrafo de horario. Se alinea al centro. Se le da margen de abajo
+y se cambia el texto a negrita*/
+
+.horario p {
+    text-align: center;
+    margin-bottom: 10%;
+    font-weight: bold;
+}
+
+
+/*div de redes. Se posiciona en la ultima parte del grid y se le añade
+margen de arriba, Se alinea al centro el texto*/
+
+.redes {
+    grid-column: 3/3;
+    margin-top: 7%;
+    text-align: center;
+}
+
+
+/*Imagenes de redes. Se le da margen de arriba y de izquierda y se 
+baja el tamaño de las fotos.*/
+
+.redes img {
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 10%;
+}

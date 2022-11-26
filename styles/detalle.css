@@ -1,0 +1,185 @@
+/*Borrar formato*/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre,
+code,
+address,
+form,
+fieldset,
+blockquote {
+    padding: 0;
+    /*relleno a 0*/
+    margin: 0;
+    /*margen a 0 */
+    font-size: 100%;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*Etiqueta body. Le damos tamaño 100 vh y ademas creamos un grid para toda la pagina
+donde sera de 3 columnas y 4 filas, en 1 fila estara el header, en otra el nav,
+en otra el main y en la ultima el footer.*/
+
+body {
+    height: 101vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+/************************ NAV ************************/
+
+
+/*Se le añade al enlace de Home un color verde para saber que nos situamos
+en esa pagina.*/
+
+.detalle {
+    color: #0E7A0D;
+}
+
+
+/************************ MAIN *************************/
+
+
+/*Etiqueta main. Se posiciona el grid en la columnas del 1-4 (toda la pagina
+ horizontal) y la fila 3*/
+
+main {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+
+/*Div de main. Se crea un grid para los proximos div del main. Se le da un margen
+de arriba.*/
+
+#detalle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -10.7%;
+}
+
+
+/*div de imagen. Se pone en la primera columna del grid. Se le da margen izquierda,
+derecha y abajo. Se alinea el texto en el centro.*/
+
+.imagen {
+    grid-column: 1/2;
+    margin-left: 3%;
+    margin-right: 20%;
+    margin-bottom: 8%;
+    text-align: center;
+}
+
+
+/*div de descripcion. Se pone en la columna del medio del grid. Se añade un color al
+fondo, Se le pone margen izquierda y derecha. Se alinea el texto al centro.*/
+
+.descripcion {
+    grid-column: 2/3;
+    background-color: #EDEDED;
+    margin-left: -25%;
+    margin-right: -25%;
+    text-align: center;
+}
+
+
+/*h2 de descripción. Se le añade al texto negrita, se le aumenta el tamaño, se le pone
+subrayado y se le da margen de abajo y arriba.*/
+
+.descripcion h2 {
+    font-weight: bold;
+    font-size: 130%;
+    text-decoration: underline;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+
+/*Parrafos de descripción. Se le da margen arriba, izquierda y derecha.*/
+
+.descripcion p {
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+/*lista desordenada de descripción. Se le da margen arriba, izquierda y derecha.*/
+
+.descripcion ul {
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+/*Parafos de la lista desordenada. Se le da parrago izquierdo y derecho*/
+
+.descripcion ul li {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+/*div de comprar. Se posiciona en la 3º columna(la ultima). Se añade un color al 
+fondo. Margen izquierdo y derecho y se alinea el texto del div en el medio. */
+
+.comprar {
+    grid-column: 3/3;
+    background-color: #EDEDED;
+    margin-left: 33%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+
+/*H2 del div comprar. Se añade negrita al h2, se aumenta su tamaño, se subraya, y se
+le da margen de abajo y arriba.*/
+
+.comprar h2 {
+    font-weight: bold;
+    font-size: 130%;
+    text-decoration: underline;
+    margin-bottom: 2%;
+    margin-top: 4%
+}
+
+
+/*Parrafo del div comprar(el precio). Se aumenta la letra de tamaño, se pone en 
+negrita y se le da margen de arriba.*/
+
+.comprar p {
+    font-size: 400%;
+    font-weight: bold;
+    margin-top: 20%
+}
+
+
+/*input de comprar. Se le añade margen de arriba, se pone dentro del input un color
+de fondo, un padding para aumentar el tamaño del boton. Se cambia el color de las 
+letras a blanco, se aumenta el tamaño de las letras y se quita el borde.*/
+
+.comprar input {
+    margin-top: 15%;
+    background-color: #767575;
+    padding: 2% 3% 2% 3%;
+    color: white;
+    font-size: 150%;
+    border: 0;
+}

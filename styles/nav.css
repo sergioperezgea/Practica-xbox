@@ -1,0 +1,49 @@
+/************************ NAV ************************/
+
+
+/*Div del nav. Se posiciona en todas las columnas del grip para ocupar toda
+la pagina horizontalmente, y en la fila 2. EL z-index es para que los enlaces
+se posicionen correctamente.*/
+
+#navegador {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    z-index: 0;
+}
+
+
+/*Etiquieta nav. Se alinea en el centro, se le da un color de fondo,
+padding para separar las letras del marco y margen para hacer mas pequeño
+el nav.*/
+
+nav {
+    text-align: center;
+    background-color: #767575;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: -5%;
+}
+
+
+/*Enlace del nav. Se quita la decoración . Se le pone a los caracteres
+el color blanco, se añade que sea negrita, se aumenta tamaño y se le da margen.*/
+
+nav a {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-weight: bold;
+    font-size: 140%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+
+/*Hover de enlace nav para que cuando pase el cursor por encima cambie de color
+blanco a verde.*/
+
+nav a:hover {
+    color: #0E7A0D;
+}

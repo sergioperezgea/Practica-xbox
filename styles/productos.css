@@ -1,0 +1,193 @@
+/*Borrar formato*/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre,
+code,
+address,
+form,
+fieldset,
+blockquote {
+    padding: 0;
+    /*relleno a 0*/
+    margin: 0;
+    /*margen a 0 */
+    font-size: 100%;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*Etiqueta body. Le damos tamaño 100 vh y ademas creamos un grid para toda la pagina
+donde sera de 3 columnas y 4 filas, en 1 fila estara el header, en otra el nav,
+en otra el main y en la ultima el footer.*/
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+/************************ NAV ************************/
+
+
+/*Se le añade al enlace de Home un color verde para saber que nos situamos
+en esa pagina.*/
+
+.productos {
+    color: #0E7A0D;
+}
+
+
+/************************ MAIN ************************/
+
+
+/*Etiqueta del main. Se posiciona el main en todas las columnas de la pagina 
+y en la fila 2/3 de la pagina. Se le da margen arriba,abajo izquierda y derecha.*/
+
+main {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    margin-top: 1%;
+    margin-bottom: 2.9%;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+
+/*Div de productos. Se crea un grid de 3 columnas. Se divira en 3 partes. En cada
+parte ira un articulo.*/
+
+#productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/*1º div de productos. Este es el primer articulo. Se posiciona el div en la primera
+parte del grid y se añade z-index para que funcione correctamente el boton leer más.*/
+
+#producto1 {
+    grid-column: 1/2;
+    z-index: 1;
+}
+
+
+/*inpurt de producto 1. Se alinea el texto en el centro, se quita la decoración se hace que el elemento sea
+en bloque para poder posicionarlo bn dentro del div. Se le da margen izquierdo y
+derecho. Se cambia el color de texto a blanco, un color de fondo del boton, se añade
+un padding para aumentar el tamaño del boton y se pone la letra en negrita.*/
+
+#leer1 {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-left: 20%;
+    margin-right: 60%;
+    color: white;
+    background-color: #767575;
+    padding: 1%;
+    font-weight: bold;
+}
+
+
+/*Hover de leer mas del 1º producto. Se hace este hover para que cuando pasemos
+el raton por encima se cambie de color el texto de blanco a verde y siga en negrita.*/
+
+#leer1:hover {
+    color: #0E7A0D;
+    font-weight: bold;
+}
+
+
+/*2º div de productos. Este es el segun articulo. Se aumenta el tamaño de la imagen
+Se posiciona el div en la segunda  parte del grid, Se le da margen izquierdo
+y se añade z-index para que funcione correctamente el boton leer más.*/
+
+#producto2 {
+    width: 100%;
+    grid-column: 2/3;
+    margin-left: 10%;
+    z-index: 1;
+}
+
+
+/*input de producto 2. Se alinea el texto en el centro, se quita la decoración se hace que el elemento sea
+en bloque para poder posicionarlo bn dentro del div. Se le da margen izquierdo y
+derecho. Se cambia el color de texto a blanco, un color de fondo del boton, se añade
+un padding para aumentar el tamaño del boton y se pone la letra en negrita.*/
+
+#leer2 {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-left: 10%;
+    margin-right: 70%;
+    color: white;
+    background-color: #767575;
+    padding: 1%;
+    font-weight: bold;
+}
+
+
+/*Hover de leer mas del 2º producto. Se hace este hover para que cuando pasemos
+el raton por encima se cambie de color el texto de blanco a verde y siga en negrita.*/
+
+#leer2:hover {
+    color: #0E7A0D;
+    font-weight: bold;
+}
+
+
+/*3º div de productos. Este es el tercer articulo. Se aumenta el tamaño de la imagen
+Se posiciona el div en la tercera  parte del grid, Se le da margen izquierdo
+y arriba se añade z-index para que funcione correctamente el boton leer más.*/
+
+#producto3 {
+    grid-column: 3/4;
+    margin-left: 10%;
+    margin-top: 4%;
+    z-index: 1;
+}
+
+
+/*Input de producto3. Se alinea el texto en el centro, se quita la decoración se hace que el elemento sea
+en bloque para poder posicionarlo bn dentro del div. Se le da margen izquierdo y
+derecho. Se cambia el color de texto a blanco, un color de fondo del boton, se añade
+un padding para aumentar el tamaño del boton y se pone la letra en negrita.*/
+
+#leer3 {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-left: 21%;
+    margin-right: 57%;
+    margin-top: 6%;
+    color: white;
+    background-color: #767575;
+    padding: 1%;
+    font-weight: bold;
+}
+
+
+/*Hover de leer mas del 2º producto. Se hace este hover para que cuando pasemos
+el raton por encima se cambie de color el texto de blanco a verde y siga en negrita.*/
+
+#leer3:hover {
+    color: #0E7A0D;
+    font-weight: bold;
+}

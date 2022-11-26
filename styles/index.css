@@ -1,0 +1,139 @@
+/*Borrar formato*/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre,
+code,
+address,
+form,
+fieldset,
+blockquote {
+    padding: 0;
+    /*relleno a 0*/
+    margin: 0;
+    /*margen a 0 */
+    font-size: 100%;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*Etiqueta body. Le damos tamaño 100 vh y ademas creamos un grid para toda la pagina
+donde sera de 3 columnas y 4 filas, en 1 fila estara el header, en otra el nav,
+en otra el main y en la ultima el footer.*/
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+/************************ NAV ************************/
+
+
+/*Se le añade al enlace de Home un color verde para saber que nos situamos
+en esa pagina.*/
+
+.home {
+    color: #0E7A0D;
+}
+
+
+/************************ MAIN ************************/
+
+
+/*Etiqueta main. Se posiciona en el grid, se formatea padding y se le
+añade margen izquierda, arriba y abajo al slider*/
+
+main {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    padding: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: -4%;
+}
+
+
+/************************ SLIDE ************************/
+
+
+/*Si la imagen sale del slider desaparece con overflow:hidden*/
+
+.slider {
+    overflow: hidden;
+}
+
+
+/*Lista desordenada del slider. se hace flex para posicionar el slider correctamente.
+se quita el padding, se le da un margen de abajo. se aumenta el slide de tamaño
+y se añade una animacion para que se desplaze la imagen de izquierda a derecha y
+cuando termina, de derecha a izquierda.*/
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    margin-bottom: 10%;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+}
+
+
+/*Se hace que la lista ocupe un 100% del div, y se el punto de las listas
+desordenadas.*/
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+
+/*Se le añade a la imagen que sea 100% tamaño del div.*/
+
+.slider img {
+    width: 100%;
+}
+
+
+/*Animación para que vayan moviendose las imagenes*/
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
